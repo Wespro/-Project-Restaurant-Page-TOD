@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #272b31;
+}
+a {
+  text-decoration: none;
+}
+#content {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(32rem, 95rem);
+  justify-content: center;
+  align-content: center;
+}
+.taps {
+  padding: 2rem 1rem 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.tap {
+  border: none;
+  border-radius: 14px;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: rgb(255, 187, 0);
+  cursor: pointer;
+  border: 3px solid black;
+}
+.tap:hover {
+  background-color: rgb(255, 153, 0);
+}
+.homeScreen,
+.menuScreen,
+.contactScreen {
+  background-color: rgb(253, 203, 64);
+  border-radius: 14px;
+  margin: 0 5rem;
+  padding: 2rem;
+  display: grid;
+  gap: 8rem;
+  border: 5px solid rgb(0, 0, 0);
+  justify-items: center;
+  justify-content: center;
+}
+/* footer */
+footer {
+  margin: 2rem 0 0;
+  padding: 1rem;
+  background-color: rgb(253, 203, 64);
+  text-align: center;
+  color: black;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  gap: 0.5rem;
+}
+/* media queires  */
+@media screen and (max-width: 750px) {
+  .taps {
+    padding: 2rem 0 1rem;
+
+    gap: 0.5rem;
+  }
+  .tap {
+    padding: 1rem 1.5rem;
+    font-size: 0.8rem;
+  }
+  .homeScreen,
+  .menuScreen,
+  .contactScreen {
+    gap: 4rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
